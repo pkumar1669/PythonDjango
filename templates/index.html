@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Files</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/Test.css' %}">
+</head>
+<body>
+<h1 align="middle"> List of Courses</h1>
+<img src="{% static 'images/python.jpeg' %}" alt="Python" height="300" width="300">
+<h1>{{ course1.name }} - {{ course1.des}}</h1>
+<h2>Course Fee: ${{ course1.price }}</h2>
+<img src="{% static 'images/html.png' %}" alt="HTML" height="300" width="300">
+<h1>{{ course2.name }} - {{ course2.des }}</h1>
+<h2>Course Fee : ${{ course2.price }}</h2>
+<img src="{% static 'images/tkinter.jpg' %}" alt="Tkinter" height="300" width="300">
+<h1>{{ course3.name }} - {{ course3.des }}</h1>
+<h2>Course Fee : ${{ course3.price }}</h2>
+</body>
+</html>
